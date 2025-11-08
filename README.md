@@ -25,10 +25,10 @@ To run cex-streamer
 `
 docker-compose up -d
 `
-to start a Redis instance through Docker (make sure you have Docker installed).
+in cex-streamer to start a Redis instance through Docker (make sure you have Docker installed).
 
 `
-cargo run -- -c ./config.json
+cargo run -p cex-streamer -- -c ./config.json
 `
 to start the program.
 
@@ -40,9 +40,17 @@ Read from the `cex-streamer` Redis BBO stream(s) in the terminal
 
 Make sure `REDIS_HOSTNAME` is set in .env
 
-Usage: `-s` to pass in symbols to display
+Usage: `-s` to pass in symbols to display (`./bbo-viewer -s BTCUSDT ETHUSDT` for example)
 
-e.g.:
+As a default it will display BTC/USDT, ETH/USDT, and SOL/USDT.
 
-    `./bbo-viewer -s BTCUSDT ETHUSDT`
+`
+cargo run -p bbo-viewer
+`
+
+Looks something like this (very simple)
+
+<img width="824" height="232" alt="Screenshot 2025-11-07 at 9 55 49 PM" src="https://github.com/user-attachments/assets/53bb63e1-c4d2-4280-baf8-5ae9a2e3dcc2" />
+
+
 
