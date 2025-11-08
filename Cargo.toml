@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "cex-streamer",
+    "bbo-viewer",
+]
+resolver = "3"

@@ -1,0 +1,41 @@
+# Rust
+cex-streamer/target/
+Cargo.lock
+**/*.rs.bk
+*.pdb
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Environment
+../.env
+.env
+.env.*
+!.env.example
+
+# Old Git backups
+**/.git-previous/
+
+# Logs
+*.log
+logs/
+
+# Keys and secrets
+*.key
+*.pem
+*.p12
+*.pfx
+secrets/
+
+# Test data
+test-data/
+*.db
+*.sqlite
+
+# Build artifacts
+dist/
+build/

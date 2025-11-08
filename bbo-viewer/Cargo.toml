@@ -1,0 +1,16 @@
+[package]
+name = "bbo-viewer"
+version = "0.1.0"
+description = "A simple TUI to view BBO updates from Redis"
+authors = ["ckruger097 <ckruger4@gmu.edu>"]
+license = "MIT"
+edition = "2024"
+
+[dependencies]
+crossterm = { version = "0.28.1", features = ["event-stream"] }
+tokio = { version = "1.40.0", features = ["full"] }
+redis = { version = "0.27", features = ["tokio-comp", "connection-manager", "streams"] }
+chrono = "0.4.42"
+anyhow = "1.0.100"
+dotenv = "0.15.0"
+clap = { version = "4.5.48", features = ["derive"] }

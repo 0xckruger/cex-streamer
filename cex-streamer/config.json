@@ -1,0 +1,39 @@
+[
+  {
+    "exchange": "binance",
+    "enabled": true,
+    "wss_uri": "wss://fstream.binance.com/stream",
+    "streams": [
+      "bookTicker"
+    ],
+    "symbols": [
+      {
+        "symbol": "BTCUSDT",
+        "enabled": true,
+        "base": "BTC",
+        "quote": "USDT"
+      },
+      {
+        "symbol": "ETHUSDT",
+        "enabled": true,
+        "base": "ETH",
+        "quote": "USDT"
+      },
+      {
+        "symbol": "SOLUSDT",
+        "enabled": true,
+        "base": "SOL",
+        "quote": "USDT"
+      }
+    ]
+  },
+  {
+    "exchange": "okx",
+    "enabled": false,
+    "wss_uri": "wss://ws.okx.com:8443/ws/v5/public",
+    "streams": [
+      "tickers"
+    ],
+    "symbols": []
+  }
+]
