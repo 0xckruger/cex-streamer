@@ -3,6 +3,7 @@ cex-streamer/target/
 Cargo.lock
 **/*.rs.bk
 *.pdb
+./target
 
 # IDE
 .idea/
